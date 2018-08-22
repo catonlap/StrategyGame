@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+}
+
+.img-fluid {
+    max-height: 250px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.explosion {
+    position: absolute;
+    display: none;
+}
+
+.textbox-name {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.textbox {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#your-character {
+    clear: both;
+}
+
+#animate {
+    display: none;
+    margin-top: 35%;
+    width: 15px;
+    height: 5px;
+    position: absolute;
+    background-color: red;
+}
+
+h1 {
+    font-family: 'Ruslan Display', cursive;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Ruslan Display', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+h3 {
+    font-family: 'Ruslan Display', cursive;
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    font-size: 50px;
+    font-family: 'Ruslan Display', cursive;
+    text-align: center;
+    color: white;
+}
+
+.fighters {
+    font-family: 'Passion One', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 150px;
+    height: 150px;
+}​,

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>RPG</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+
+
+</head>
+<style>
+    body {
+    background-image: url("assets/images/stars.jpg");
+}
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-center">GALACTIC CONQUEST!</h1>
+                <h2>Click a character to begin, Then click another character to challenge them</h2>
+                <hr>
+
+            </div>
+        </div>
+
+        <!-- Characters: -->
+        <div class="row">
+            <div class="col-md-3">
+
+                <!-- Character boxes -->
+                <div class="fighters" id="frodo">
+                    <div class="textbox-name">Millennium Falcon</div>
+                    <img class="img-fluid" src="assets/images/falcon.jpg" alt="frodo"></img>
+                    <div class="textbox">Health:
+                    <br><span class="health" id="frodo-health">150</span>
+                    <div>Attack:</div>
+                    <span class="attack" id="frodo-attack">15</span>
+                        <div class="textbox">Defense: <br>15</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="fighters" id="merry">
+                    <div class="textbox-name">TIE Fighter</div>
+                    <img class="img-fluid" src="assets/images/thai.jpg" alt="merry"></img>
+                    <div class="textbox">Health:
+                        <br><span class="health" id="merry-health">50</span>
+                        <div>Attack:</div>
+                        <span class="attack" id="merry-attack">50</span>
+                        <div class="textbox">Defense: <br>50</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="fighters" id="pippin">
+                    <div class="textbox-name">X-Wing Starfighter</div>
+                    <img class="img-fluid" src="assets/images/xwing.jpg" alt="pippin"></img>
+                    <div class="textbox">Health:
+                        <br><span class="health" id="pippin-health">100</span>
+                        <div>Attack:</div>
+                        <span class="attack" id="pippin-attack">20</span>
+                        <div class="textbox">Defense: <br>20</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="fighters" id="sam">
+                    <div class="textbox-name">Star Destroyer</div>
+                    <img class="img-fluid" src="assets/images/destroyer.jpg" alt="sam"></img>
+                    <div class="textbox">Health:
+                        <br><span class="health" id="sam-health">200</span>
+                        <div>Attack:</div>
+                        <span class="attack" id="sam-attack">10</span>
+                        <div class="textbox">Defense: <br> 10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>ATTACKER</h4>
+                <div id="your-character">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-danger" onclick ="myMove()">FIRE!</button>
+                <div id ="animate-container">
+                        <div id ="animate"></div>
+                        </div>
+                        <script>
+                        function myMove() {
+                          var elem = document.getElementById("animate");   
+                          var pos = 0;
+                          var id = setInterval(frame, 5);
+                          function frame() {
+                            if (pos == 1350) {
+                              clearInterval(id);
+                            } else {
+                              pos++; 
+                              elem.style.left = pos + 'px'; 
+                              elem.style.left = pos + 'px'; 
+                            }
+                          }
+                        }
+                </script>
+            </div>
+            <div class="col-md-4">
+                <h4>DEFENDER</h4>
+                <div id="enemy-character"><img class="explosion" src="assets/images/explosion.jpg" alt="sam"></img></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
